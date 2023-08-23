@@ -39,6 +39,17 @@ public class CWH_29_Practice_Set_6 {
 
          */
         //Question-3
+        /*
+        int [] marks = {99,98,97,96,95};
+        float sum = 0;
+        for(int element:marks){
+            sum = sum + element;
+        }
+        System.out.println("Average of marks is " + (sum/ marks.length));
+
+         */
+        //Question-4
+
 
 
 
