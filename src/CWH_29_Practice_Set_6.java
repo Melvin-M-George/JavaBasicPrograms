@@ -49,6 +49,7 @@ public class CWH_29_Practice_Set_6 {
 
          */
         //Question-4
+        /*
         int [][] mat1 ={{1,2,3},{4,5,6}};
         int [][] mat2 ={{7,8,9},{10,11,12}};
         int [][] result = {{0,0,0},{0,0,0}};
@@ -63,6 +64,24 @@ public class CWH_29_Practice_Set_6 {
             }
             System.out.println(" ");
         }
+
+         */
+        //Question-5
+        //int a = Math.floorDiv(7,2);
+        //System.out.println(a);
+        int [] arr = {1,2,3,4,5,6};
+        int l = arr.length;
+        int n = Math.floorDiv(l,2);
+        int temp;
+        for(int i=0;i<n;i++){
+            temp = arr[i];
+            arr[i] = arr[l-i-1];
+            arr[l-i-1] = temp;
+        }
+        for(int i=0;i<l;i++){
+            System.out.println(arr[i]);
+        }
+
 
 
 
