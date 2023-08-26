@@ -69,6 +69,7 @@ public class CWH_29_Practice_Set_6 {
         //Question-5
         //int a = Math.floorDiv(7,2);
         //System.out.println(a);
+        /*
         int [] arr = {1,2,3,4,5,6};
         int l = arr.length;
         int n = Math.floorDiv(l,2);
@@ -81,6 +82,54 @@ public class CWH_29_Practice_Set_6 {
         for(int i=0;i<l;i++){
             System.out.println(arr[i]);
         }
+
+         */
+        //Question-6
+        /*
+        int [] arr = {155,26,3000,45,5,6};
+        int max= 0;
+        for(int element:arr){
+            if(element>max){
+                max = element;
+            }
+        }
+        System.out.printf("The maximum element in the array is %d",max);
+
+         */
+        //Question-7
+        /*
+        int [] arr = {155,26,3000,45,58,622};
+        int min = Integer.MAX_VALUE;
+        for(int element:arr){
+            if(element<min){
+                min = element;
+            }
+        }
+        System.out.printf("The minimum element in the array is %d",min);
+
+         */
+        //Question-8
+        int [] arr ={1,2,3,4,5};
+        boolean isSorted = true;
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]>arr[i+1]){
+                isSorted = false;
+                break;
+            }
+        }
+        if(isSorted){
+            System.out.println("The array is sorted");
+        }
+        else{
+            System.out.println("The array is not sorted");
+        }
+
+
+
+
+
+
+
 
 
 
