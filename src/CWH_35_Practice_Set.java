@@ -1,14 +1,17 @@
 public class CWH_35_Practice_Set {
-    static void multiplication(int n){
+    //Question -1
+    static int multiplication_table(int n){
 
-        for (int i=0;i<=11;i++){
-            n = n * i;
+        int multi = 1;
+        System.out.println("The multiplication table of "+n+ " is");
+        for(int i=1;i<11;i++){
+            multi = i * n;
+            System.out.println(n+ "*"+ i + "=" + multi);
         }
-
+        return multi;
     }
-
     public static void main(String[] args) {
-        multiplication(4);
+        multiplication_table(10);
 
 
     }
