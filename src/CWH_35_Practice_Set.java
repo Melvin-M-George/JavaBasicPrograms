@@ -43,6 +43,13 @@ public class CWH_35_Practice_Set {
         }
 
     }
+    static float average(float ...arr){
+        float sum = 0;
+        for(float element:arr){
+            sum = sum + element;
+        }
+        return sum/arr.length;
+    }
 
     public static void main(String[] args) {
         //Question -1
@@ -58,9 +65,13 @@ public class CWH_35_Practice_Set {
         //Question-4
         //pattern2(5);
 
-        //Question-5
-        int x = 6;
-        System.out.println("The 6th term in the fibonacci series is "+ nth_fibonacci(x));
+
+        //int x = 6;
+        //System.out.println("The 6th term in the fibonacci series is "+ nth_fibonacci(x));
+
+        //Question-6
+        System.out.println("Th average of numbers is "+ average(1,2,3));
+
 
 
 
