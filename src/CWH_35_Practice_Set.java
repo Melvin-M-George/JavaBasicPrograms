@@ -50,6 +50,11 @@ public class CWH_35_Practice_Set {
         }
         return sum/arr.length;
     }
+    static float celsius_to_fahreheit(float c){
+        //f = c * (9/5) + 32
+        return c * (9f/5) + 32;
+
+    }
 
     public static void main(String[] args) {
         //Question -1
@@ -70,7 +75,12 @@ public class CWH_35_Practice_Set {
         //System.out.println("The 6th term in the fibonacci series is "+ nth_fibonacci(x));
 
         //Question-6
-        System.out.println("Th average of numbers is "+ average(1,2,3));
+        //System.out.println("Th average of numbers is "+ average(1,2,3));
+
+        //Question-9
+        float x = 38;
+        System.out.println("The temperature in fahrenheit is: "+ celsius_to_fahreheit(x));
+
 
 
 
