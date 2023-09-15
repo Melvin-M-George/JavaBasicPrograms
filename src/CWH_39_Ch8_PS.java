@@ -19,7 +19,9 @@ public class CWH_39_Ch8_PS {
     public static void main(String[] args) {
         //Question-1
         Employee harry = new Employee();
+        harry.salary = 15;
         harry.setName("CodeWithHarry");
+        System.out.println(harry.getSalary());
         System.out.println(harry.getName());
 
     }
