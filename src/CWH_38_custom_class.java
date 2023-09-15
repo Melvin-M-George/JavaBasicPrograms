@@ -1,4 +1,4 @@
-class Employee{
+class Employee1{
     int id;
     int salary;
     String name;
@@ -11,8 +11,8 @@ class Employee{
 }
 public class CWH_38_custom_class {
     public static void main(String[] args) {
-        Employee melvin = new Employee(); // Instantiating a new Employee object
-        Employee manav = new Employee(); // Instantiating a new Employee object
+        Employee1 melvin = new Employee1(); // Instantiating a new Employee object
+        Employee1 manav = new Employee1(); // Instantiating a new Employee object
 
         //Setting attributes
         melvin.id = 2001;
