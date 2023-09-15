@@ -49,6 +49,19 @@ class Rectangle{
         return 2*(length+breadth);
     }
 }
+
+class Tommy{
+    public void hit(){
+        System.out.println("Hitting");
+    }
+    public void run(){
+        System.out.println("running");
+    }
+    public void fire(){
+        System.out.println("Firing");
+    }
+
+}
 public class CWH_39_Ch8_PS {
     public static void main(String[] args) {
         /*
@@ -74,11 +87,19 @@ public class CWH_39_Ch8_PS {
         System.out.println("The perimeter of the square is:"+sq.perimeter());
         */
         //Question-4
+        /*
         Rectangle rec = new Rectangle();
         rec.length = 4;
         rec.breadth = 2;
         System.out.println("The area of the rectangle is:"+rec.area());
-        System.out.println("The area of the rectangle is:"+rec.perimeter());
+        System.out.println("The perimeter of the rectangle is:"+rec.perimeter());
+
+         */
+        //Question-5
+        Tommy player = new Tommy();
+        player.hit();
+        player.run();
+        player.fire();
 
 
 
