@@ -10,6 +10,14 @@ public class CWH_41_Excercise_sol_2 {
         Random random = new Random();
         int ComputerInput = random.nextInt(3);
 
+        if(ComputerInput==0){
+            System.out.println("Computer Choice: Rock");
+        }if(ComputerInput==1){
+            System.out.println("Computer Choice: Paper");
+        }if(ComputerInput==2){
+            System.out.println("Computer Choice: Scissor");
+        }
+
         if(UserInput==ComputerInput){
             System.out.println("Draw, Play again!");
         }
@@ -20,6 +28,7 @@ public class CWH_41_Excercise_sol_2 {
         else{
             System.out.println("Computer Win!!");
         }
+
 
 
     }
