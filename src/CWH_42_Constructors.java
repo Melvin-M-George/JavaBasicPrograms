@@ -18,12 +18,15 @@ class MyMainEmployee {
     public int getId() {
         return id;
     }
-//    public MyMainEmployee(){
-//        id = 49;
-//        name = "Your_name";
-//    }
+    public MyMainEmployee(){
+        id = 49;
+        name = "Your_name";
+    }
     public MyMainEmployee(String myName, int myId){
         id = myId;
+        name = myName;
+    }
+    public MyMainEmployee(String myName){
         name = myName;
     }
 }
