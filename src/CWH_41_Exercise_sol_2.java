@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-public class CWH_41_Excercise_sol_2 {
+public class CWH_41_Exercise_sol_2 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
