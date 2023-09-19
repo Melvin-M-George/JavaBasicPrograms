@@ -3,7 +3,7 @@ class MyMainEmployee {
     private String name;
 
     public void setName(String n) {
-        name = n;
+        this.name = n;
     }
 
     public String getName() {
@@ -12,7 +12,7 @@ class MyMainEmployee {
     }
 
     public void setId(int i) {
-        id = i;
+        this.id = i;
     }
 
     public int getId() {
