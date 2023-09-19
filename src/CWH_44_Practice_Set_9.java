@@ -20,9 +20,11 @@ public class CWH_44_Practice_Set_9 {
 
         Cylinder myCylinder = new Cylinder();
         myCylinder.setRadius(5);
-        System.out.println(myCylinder.getRadius());
+        int r = myCylinder.getRadius();
+        System.out.println(r);
         myCylinder.setHeight(10);
-        System.out.println(myCylinder.getHeight());
+        int h = myCylinder.getHeight();
+        System.out.println(h);
 
 
     }
