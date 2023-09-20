@@ -26,12 +26,45 @@ class Cylinder{
         return Math.PI*radius*radius*height;
     }
 }
+
+
+class Rectangle1{
+    private int length;
+    public int breadth;
+
+    public Rectangle1() {
+        this.length = 4;
+        this.breadth = 5;
+    }
+
+    public Rectangle1(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public int getBreadth() {
+        return breadth;
+    }
+
+    public void setBreadth(int breadth) {
+        this.breadth = breadth;
+    }
+}
 public class CWH_44_Practice_Set_9 {
     public static void main(String[] args) {
 
 
         Cylinder myCylinder = new Cylinder(9,12);
-        //Question -1
+
+        /*
         //myCylinder.setRadius(9);
         System.out.println(myCylinder.getRadius());
         //myCylinder.setHeight(12);
@@ -39,10 +72,16 @@ public class CWH_44_Practice_Set_9 {
 
 
 
-        //Question-2
+
         System.out.println(myCylinder.surfaceArea());
         System.out.println(myCylinder.volume());
 
+         */
+
+
+        Rectangle1 r = new Rectangle1();
+        System.out.println(r.getLength());
+        System.out.println(r.getBreadth());
 
     }
 }
