@@ -25,6 +25,10 @@ class Derived extends Base{
 
 public class CWH_45_Inheritance {
     public static void main(String[] args) {
+        Derived b = new Derived();
+        b.setX(4);
+        System.out.println(b.getX());
+
 
     }
 }
