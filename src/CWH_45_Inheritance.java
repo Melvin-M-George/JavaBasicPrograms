@@ -22,6 +22,7 @@ class Derived extends Base{
         this.y = y;
     }
 }
+
 public class CWH_45_Inheritance {
     public static void main(String[] args) {
         //Creating object of Base class
