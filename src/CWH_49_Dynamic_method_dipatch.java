@@ -1,14 +1,14 @@
 class Phone{
-    public void greet(){
-        System.out.println("Good Morning");
+    public void show_Time(){
+        System.out.println("10:15");
     }
     public void on(){
         System.out.println("Turning on phone....");
     }
 }
 class Smartphone extends Phone{
-    public void welcome(){
-        System.out.println("Welcome");
+    public void Music(){
+        System.out.println("Playing Music");
     }
     @Override
     public void on(){
@@ -23,7 +23,7 @@ public class CWH_49_Dynamic_method_dipatch {
 
         Phone obj = new Smartphone(); //Allowed
         //Smartphone obj2 = new Phone(); // Not Allowed
-        obj.greet();
+        obj.show_Time();
         obj.on();
 
 
