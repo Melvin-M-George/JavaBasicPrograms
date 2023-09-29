@@ -7,7 +7,7 @@ class Phone{
     }
 }
 class Smartphone extends Phone{
-    public void Music(){
+    public void music(){
         System.out.println("Playing Music");
     }
     @Override
