@@ -23,6 +23,9 @@ public class CWH_49_Dynamic_method_dipatch {
 
         Phone obj = new Smartphone(); //Allowed
         //Smartphone obj2 = new Phone(); // Not Allowed
+        obj.greet();
+        obj.name();
+
 
     }
 }
