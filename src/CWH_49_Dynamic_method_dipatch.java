@@ -25,6 +25,7 @@ public class CWH_49_Dynamic_method_dipatch {
         //Smartphone obj2 = new Phone(); // Not Allowed
         obj.show_Time();
         obj.on();
+        //obj.music(); // Not allowed
 
 
     }
