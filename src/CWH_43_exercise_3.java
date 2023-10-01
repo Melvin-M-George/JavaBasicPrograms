@@ -1,6 +1,4 @@
-class Game{
 
-}
 public class CWH_43_exercise_3 {
     public static void main(String[] args) {
         /*
