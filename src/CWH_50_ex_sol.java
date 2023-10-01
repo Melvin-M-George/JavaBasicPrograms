@@ -1,3 +1,4 @@
+import java.util.Random;
 class game{
     public int number;
     public int numberOfGuesses;
@@ -11,7 +12,8 @@ class game{
     }
 
     void Game(){
-        this.number= n;
+        Random rand = new Random();
+        this.number = rand.nextInt();
     }
     void takeUserInput(){
 
