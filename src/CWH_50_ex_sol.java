@@ -4,7 +4,7 @@ import java.util.Scanner;
 class Game{
     public int number;
     public int inputNumber;
-    public int numberOfGuesses;
+    public int numberOfGuesses=0;
 
     public int getNumberOfGuesses() {
         return numberOfGuesses;
@@ -25,8 +25,9 @@ class Game{
 
     }
     boolean isCorrectNumber(){
+        numberOfGuesses++;
         if (inputNumber==number){
-            System.out.println("Yes, you guessed it right..!!");
+            System.out.printf("Yes, you guessed it right..!!, it was %d\n You  guessed it in %d attempts\n",number,numberOfGuesses);
             return true;
         }
         else if(inputNumber<number){
@@ -56,7 +57,6 @@ public class CWH_50_ex_sol {
         while(!b){
             g.takeUserInput();
             b = g.isCorrectNumber();
-            System.out.println(b);
         }
 
 
