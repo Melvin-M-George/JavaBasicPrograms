@@ -14,7 +14,7 @@ class Game{
         this.numberOfGuesses = numberOfGuesses;
     }
 
-    void Game(){
+    Game(){
         Random rand = new Random();
         this.number = rand.nextInt(100);
     }
@@ -24,14 +24,15 @@ class Game{
         inputNumber = sc.nextInt();
 
     }
-    boolean isCorrectNumber(int num){
-        if (num==number){
+    boolean isCorrectNumber(){
+        if (inputNumber==number){
+            System.out.println("Yes, you guessed it right..!!");
             return true;
         }
-        else if(num<number){
+        else if(inputNumber<number){
             System.out.println("Too low..");
         }
-        else if(num>number){
+        else if(inputNumber>number){
             System.out.println("Too high..");
         }
         return false;
@@ -51,9 +52,12 @@ public class CWH_50_ex_sol {
          */
 
         Game g = new Game();
-        g.takeUserInput();
-        boolean b = g.isCorrectNumber();
-        System.out.println(b);
+        boolean b=false;
+        while(!b){
+            g.takeUserInput();
+            b = g.isCorrectNumber();
+            System.out.println(b);
+        }
 
 
     }
