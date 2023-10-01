@@ -1,6 +1,9 @@
 import java.util.Random;
-class game{
+import java.util.Scanner;
+
+class Game{
     public int number;
+    public int inputNumber;
     public int numberOfGuesses;
 
     public int getNumberOfGuesses() {
@@ -13,12 +16,25 @@ class game{
 
     void Game(){
         Random rand = new Random();
-        this.number = rand.nextInt();
+        this.number = rand.nextInt(100);
     }
     void takeUserInput(){
+        System.out.println("Guess the number below 100");
+        Scanner sc = new Scanner(System.in);
+        inputNumber = sc.nextInt();
 
     }
-    boolean isCorrectNumber(){
+    boolean isCorrectNumber(int num){
+        if (num==number){
+            return true;
+        }
+        else if(num<number){
+            System.out.println("Too low..");
+        }
+        else if(num>number){
+            System.out.println("Too high..");
+        }
+        return false;
 
     }
 }
@@ -35,6 +51,9 @@ public class CWH_50_ex_sol {
          */
 
         Game g = new Game();
+        g.takeUserInput();
+        boolean b = g.isCorrectNumber();
+        System.out.println(b);
 
 
     }
